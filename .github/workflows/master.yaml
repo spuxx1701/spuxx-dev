@@ -12,11 +12,14 @@ jobs:
     secrets:
       token: ${{ secrets.DOCKERHUB_TOKEN }}
 
+  helm_test:
+    uses: spuxx1701/ci-cd/.github/workflows/helm_test.yml@v2.0
+
   helm_release:
     permissions:
       contents: write
     needs:
-      - docker_release
+      - helm_test
     uses: spuxx1701/ci-cd/.github/workflows/helm_release.yml@v2.0
     secrets:
       token: ${{ secrets.CR_TOKEN }}
