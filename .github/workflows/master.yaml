@@ -1,0 +1,16 @@
+name: master
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+jobs:
+  types:
+    docker_release:
+      uses: spuxx1701/ci-cd/.github/workflows/docker_release.yml@v2.0
+      with:
+        tag: master
+      secrets:
+        token: ${{ secrets.DOCKERHUB_TOKEN }}
