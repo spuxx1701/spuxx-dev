@@ -13,6 +13,8 @@ jobs:
       token: ${{ secrets.DOCKERHUB_TOKEN }}
 
   helm_release:
+    needs:
+      - docker_release
     uses: spuxx1701/ci-cd/.github/workflows/helm_release.yml@v2.0
     secrets:
       token: ${{ secrets.CR_TOKEN }}
