@@ -1,0 +1,14 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImagePolicy
+metadata:
+  name: spuxx-dev-prod
+  namespace: spuxx-dev
+spec:
+  imageRepositoryRef:
+    name: spuxx-dev
+  filterTags:
+    pattern: 'prod'
+  policy:
+    alphabetical:
+      order: desc

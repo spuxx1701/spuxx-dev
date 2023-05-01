@@ -1,0 +1,21 @@
+replicaCount: 1
+
+app:
+  name: spuxx-dev
+  hostname: spuxx.dev
+
+image:
+  repository: spuxx/spuxx-dev
+  tag: "master"
+
+port:
+  service: 3000
+  container: 3000
+
+resources:
+  limits:
+    cpu: 50m
+    memory: 256Mi
+  requests:
+    cpu: 10m
+    memory: 128Mi
