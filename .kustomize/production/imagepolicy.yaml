@@ -8,7 +8,7 @@ spec:
   imageRepositoryRef:
     name: spuxx-dev
   filterTags:
-    pattern: 'master'
+    pattern: 'master*'
   policy:
     alphabetical:
       order: desc
