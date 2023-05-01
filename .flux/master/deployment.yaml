@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: spuxx-dev-master
+  name: spuxx-dev-prod
   namespace: spuxx-dev
   labels:
-    app: spuxx-dev-master
+    app: spuxx-dev-prod
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: spuxx-dev-master
+      app: spuxx-dev-prod
   template:
     metadata:
       labels:
-        app: spuxx-dev-master
+        app: spuxx-dev-prod
     spec:
       containers:
-        - name: spuxx-dev-master
-          image: spuxx/spuxx-dev:master
+        - name: spuxx-dev-prod
+          image: spuxx/spuxx-dev:prod
           ports:
             - containerPort: 3000
           securityContext:
