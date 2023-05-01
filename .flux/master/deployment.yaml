@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spuxx-dev-master
+  namespace: spuxx-dev
+  labels:
+    app: spuxx-dev-master
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spuxx-dev-master
+  template:
+    metadata:
+      labels:
+        app: spuxx-dev-master
+    spec:
+      containers:
+        - name: spuxx-dev-master
+          image: spuxx/spuxx-dev:master
+          ports:
+            - containerPort: 3000
+          securityContext:
+            runAsNonRoot: true
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: 3000
