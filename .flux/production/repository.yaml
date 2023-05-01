@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: spuxx-dev-prod
+  namespace: spuxx-dev
+spec:
+  interval: 30s
+  url: https://github.com/spuxx1701/spuxx-dev
+  ref:
+    branch: master
