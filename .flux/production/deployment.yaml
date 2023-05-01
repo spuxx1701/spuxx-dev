@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: spuxx-dev-prod
-          image: spuxx/spuxx-dev:prod
+          image: spuxx/spuxx-dev:master
           ports:
             - containerPort: 3000
           securityContext:
