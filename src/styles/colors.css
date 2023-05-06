@@ -1,8 +1,9 @@
 :root {
   --color-brand: #498082;
 
+  --color-app-background: #292929;
   --color-header-background: #181818;
-  --color-body-background: #313131;
+  --color-body-background: #292929;
 
   --color-code-background: #202020;
   --color-quote-background: #202020;

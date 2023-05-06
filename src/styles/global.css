@@ -9,8 +9,14 @@
   --body-width: max(65ch, 100vh);
 }
 
+html {
+  background-color: var(--color-app-background);
+}
+
 body {
-  margin: 64px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
   max-width: var(--body-width);
   background-color: var(--color-body-background);
   color: var(--color-text-default);
@@ -19,6 +25,10 @@ body {
   overflow-wrap: break-word;
   line-height: 1.5;
   font-size: 18px;
+}
+
+main {
+  margin-top: 24px;
 }
 
 textarea {
