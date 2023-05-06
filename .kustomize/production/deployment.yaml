@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: spuxx-dev-prod
-          image: spuxx/spuxx-dev # {"$imagepolicy": "spuxx-dev:spuxx-dev"}
+          image: spuxx/spuxx-dev:master-4d60bc22887a893f3e0f9dace1cc8c87786faef4 # {"$imagepolicy": "spuxx-dev:spuxx-dev"}
           ports:
             - containerPort: 3000
           securityContext:
