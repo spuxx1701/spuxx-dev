@@ -11,6 +11,10 @@ jobs:
     uses: spuxx1701/ci-cd/.github/workflows/docker_release.yml@v2.0
     secrets:
       token: ${{ secrets.DOCKERHUB_TOKEN }}
+  # docker_release:
+  #   uses: spuxx1701/ci-cd/.github/workflows/docker_release.yml@v2.0
+  #   secrets:
+  #     token: ${{ secrets.DOCKERHUB_TOKEN }}
 
   # helm_test:
   #   uses: spuxx1701/ci-cd/.github/workflows/helm_test.yml@v2.0
