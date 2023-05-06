@@ -15,7 +15,8 @@
     "@astrojs/node": "^5.1.1",
     "@astrojs/rss": "^2.4.0",
     "@astrojs/sitemap": "^1.2.2",
-    "astro": "^2.3.2"
+    "astro": "^2.3.2",
+    "astro-icon": "^0.8.0"
   },
   "devDependencies": {
     "prettier": "^2.8.8"

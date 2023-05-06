@@ -1,0 +1,30 @@
+code {
+  padding: 2px 5px;
+  background-color: var(--color-code-background);
+  border-radius: 5px;
+}
+pre {
+  padding: 1rem;
+}
+pre > code {
+  all: unset;
+}
+
+blockquote {
+  background-color: var(--color-quote-background);
+  color: var(--color-text-subtle);
+  padding: 2px 5px;
+  margin: 0px;
+  border-radius: 5px;
+  font-style: italic;
+}
+
+table {
+  width: 100%;
+}
+
+img {
+  box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
+}

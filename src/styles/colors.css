@@ -1,0 +1,15 @@
+:root {
+  --color-brand: #498082;
+
+  --color-header-background: #181818;
+  --color-body-background: #313131;
+
+  --color-code-background: #202020;
+  --color-quote-background: #202020;
+
+  --color-text-default: #f1f1f1;
+  --color-text-highlight: white;
+  --color-text-link: #498082;
+  --color-text-link-hover: #64c8c8;
+  --color-text-subtle: #c5c5c5;
+}
