@@ -1,14 +1,10 @@
-FROM node:lts-alpine AS runtime
-USER root
+FROM node:lts-alpine AS build
 WORKDIR /app
-
-COPY . .
-
+COPY package*.json ./
 RUN npm install
-RUN npm run build
+COPY . .
+RUN npm run build -- --mode custom
 
-ENV HOST=0.0.0.0
-ENV PORT=3000
-EXPOSE 3000
-USER 1000
-CMD node ./dist/server/entry.mjs
+FROM nginx:alpine AS runtime
+COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
+COPY --from=build /app/dist /usr/share/nginx/html
