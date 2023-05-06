@@ -28,7 +28,8 @@ body {
 }
 
 main {
-  margin-top: 44px;
+  box-sizing: border-box;
+  margin: 44px 10px;
 }
 
 textarea {
