@@ -10,7 +10,7 @@ jobs:
   docker_release:
     uses: spuxx1701/ci-cd/.github/workflows/release_image.yml@v2.0
     secrets:
-      token: ${{ secrets.DOCKERHUB_TOKEN }}
+      dockerhub_token: ${{ secrets.DOCKERHUB_TOKEN }}
   # docker_release:
   #   uses: spuxx1701/ci-cd/.github/workflows/docker_release.yml@v2.0
   #   secrets:
