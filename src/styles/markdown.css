@@ -1,12 +1,28 @@
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+article > * {
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+hr {
+  width: 100%;
+}
+
 code {
   padding: 2px 5px;
   background-color: var(--color-code-background);
   border-radius: 5px;
 }
+
 pre {
   padding: 1rem;
 }
-pre > code {
+
+article pre > code {
   all: unset;
 }
 
@@ -27,4 +43,16 @@ img {
   box-sizing: border-box;
   max-width: 100%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+
+.subtitle {
+  margin: 0.5rem;
+  font-size: medium;
+  font-style: italic;
+  text-align: center;
+  color: var(--color-text-subtle);
 }

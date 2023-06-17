@@ -13,4 +13,7 @@
   --color-text-link: #498082;
   --color-text-link-hover: #64c8c8;
   --color-text-subtle: #c5c5c5;
+
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  --border-radius: 4px;
 }

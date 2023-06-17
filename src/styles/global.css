@@ -1,4 +1,4 @@
-@import './colors.css';
+@import './theme.css';
 @import './text.css';
 @import './markdown.css';
 
@@ -29,7 +29,11 @@ body {
 
 main {
   box-sizing: border-box;
-  margin: 44px 10px;
+  margin: 54px 10px;
+}
+
+main > h1:first-child {
+  margin-top: 1rem;
 }
 
 textarea {
