@@ -6,7 +6,7 @@
   --color-body-background: #292929;
 
   --color-code-background: #202020;
-  --color-quote-background: #202020;
+  --color-quote-background: rgb(73, 128, 130, 0.25);
 
   --color-text-default: #f1f1f1;
   --color-text-highlight: white;
