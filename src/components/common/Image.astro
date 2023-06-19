@@ -8,11 +8,10 @@ export interface Props extends HTMLAttributes<'img'> {
   width?: number;
 }
 
-const { src, title, ...props } = Astro.props;
-let { width, alt } = Astro.props;
+const { src, title, width, ...props } = Astro.props;
+let { alt } = Astro.props;
 
 if (!alt) alt = title;
-if (!width) width = 500;
 ---
 
 <img src={src} title={title} alt={alt} width={width} {...props} />
