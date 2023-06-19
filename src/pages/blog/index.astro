@@ -12,12 +12,16 @@ const posts = (await getCollection('blog')).sort(
   <section>
     <ul>
       {
-        posts.map((post) => (
-          <li>
-            <FormattedDate date={post.data.pubDate} />
-            <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
-          </li>
-        ))
+        posts
+          .sort((a, b) => {
+            return b.data.pubDate.getTime() - a.data.pubDate.getTime();
+          })
+          .map((post) => (
+            <li>
+              <FormattedDate date={post.data.pubDate} />
+              <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
+            </li>
+          ))
       }
     </ul>
   </section>
