@@ -10,7 +10,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
 <AppLayout>
   <article>
-    {heroImage && <img width={720} height={360} src={heroImage} alt="" />}
+    {heroImage && <img class="hero-image" src={heroImage} alt="" />}
     <h1 class="title">{title}</h1>
     <FormattedDate date={pubDate} />
     {
@@ -24,3 +24,10 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
     <slot />
   </article>
 </AppLayout>
+
+<style>
+  .hero-image {
+    max-height: 280px;
+    box-shadow: none;
+  }
+</style>
