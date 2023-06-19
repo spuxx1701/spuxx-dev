@@ -45,7 +45,6 @@ img {
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
 }
 
