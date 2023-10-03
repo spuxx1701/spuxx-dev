@@ -3,4 +3,4 @@
 
 export const SITE_TITLE = 'spuxx.dev';
 export const SITE_DESCRIPTION =
-  "Hey! My name is Leopold Hock, and I tend to go by the name 'spuxx' in the world of software. Welcome to my humble abode.";
+  "Hey! My name is Leo, and I tend to go by the name 'spuxx' in the world of software. Welcome to my humble abode.";
