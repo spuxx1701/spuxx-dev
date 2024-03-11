@@ -31,7 +31,7 @@ article pre > code {
 }
 
 blockquote {
-  background-color: var(--color-quote-background);
+  background: var(--gradient-quote-background);
   color: var(--color-text-subtle);
   padding: 0px 1.25rem;
   margin: 0px;
