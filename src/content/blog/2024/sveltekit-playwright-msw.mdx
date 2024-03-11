@@ -69,7 +69,7 @@ For ease of use, let's add a command to start our test server. Add the following
 }
 ```
 
-As you can see, that command will build the SvelteKit application and then start the server we created in step 1. While doing so, it will set the `ORIGIN` environment variable to `http://localhost:4173`. This is important, as it'll configure the server's CORS settings to allow incoming requests made by the browser. There ater other ways to achieve this, like configuring [CORS](https://www.npmjs.com/package/cors) in `tests/server.js`, but I found this to be the most straightforward approach.
+As you can see, that command will build the SvelteKit application and then start the server we created in step 1. While doing so, it will set the `ORIGIN` environment variable to `http://localhost:4173`. This is important, as it'll configure the server's CORS settings to allow incoming requests made by the browser. There are other ways to achieve this, like configuring [CORS](https://www.npmjs.com/package/cors) in `tests/server.js`, but I found this to be the most straightforward approach.
 
 > **Note**: You can also use `vite build --mode test` to build the application in a different [mode](https://vitejs.dev/guide/env-and-mode), which can be useful if you need to further customize the build process for testing.
 

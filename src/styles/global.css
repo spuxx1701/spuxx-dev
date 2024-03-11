@@ -3,7 +3,7 @@
 @import './markdown.css';
 
 :root * {
-  transition: transform 200ms, box-shadow 200ms,
+  transition: transform 200ms, box-shadow 200ms, background 200ms,
     background-color 200ms, border-color 200ms, padding 200ms;
 
   --body-width: max(1000px, 100vh);

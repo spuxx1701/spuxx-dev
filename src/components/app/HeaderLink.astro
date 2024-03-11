@@ -10,7 +10,10 @@ export interface Props extends HTMLAttributes<'a'> {
 const { href, class: className, iconPack, iconName, ...props } = Astro.props;
 
 const { pathname } = Astro.url;
-const isActive = href === pathname || href === pathname.replace(/\/$/, '');
+const isActive =
+  href === pathname ||
+  href === pathname.replace(/\/$/, '') ||
+  (href !== '/' && pathname.includes(href));
 ---
 
 <a href={href} class:list={[className, { active: isActive }]} {...props}>
@@ -22,12 +25,12 @@ const isActive = href === pathname || href === pathname.replace(/\/$/, '');
     display: flex;
     text-decoration: none;
     align-items: center;
-    padding: 5px;
+    padding: 5px 10px;
+    border-bottom: 2px solid var(--color-header-background);
   }
   a.active {
-    font-weight: bolder;
-    background-color: var(--color-text-link);
-    color: var(--color-header-background) !important;
+    color: var(--color-text-link-hover) !important;
+    border-color: var(--color-text-link-hover) !important;
   }
   svg {
     margin-right: 5px;

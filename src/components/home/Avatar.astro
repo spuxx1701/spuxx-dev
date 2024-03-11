@@ -13,7 +13,13 @@
 </div>
 <style>
   :root {
-    --avatar-background: var(--color-quote-background);
+    --avatar-background: linear-gradient(
+      135deg,
+      var(--color-gradient-1),
+      var(--color-gradient-1),
+      var(--color-gradient-3),
+      var(--color-gradient-3)
+    );
     --avatar-size: 300px;
   }
   .container {
@@ -22,12 +28,13 @@
     margin: 2rem auto;
     padding: 1.4rem;
     overflow: hidden;
-    background-color: var(--avatar-background);
-    box-shadow: 10px 10px 0px var(--color-brand);
+    background: var(--color-gradient-0);
+    box-shadow: 10px 10px 0px var(--color-gradient-0);
   }
   .container:hover {
     transform: translate(-5px, -5px);
-    box-shadow: 20px 20px 0px var(--color-brand);
+    background: var(--avatar-background);
+    box-shadow: 20px 20px 0px var(--color-gradient-2);
   }
   .clip {
     position: absolute;
